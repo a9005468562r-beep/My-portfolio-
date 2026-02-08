@@ -132,7 +132,7 @@ section{
 }
 
 .home{
-    min-height: 100vh;
+   /* min-height: 100vh;*/
     height: auto;
     width: 100%;
     display: grid;
@@ -1119,7 +1119,23 @@ background: var(--hover-color);
     footer{
         font-size: .8rem;
     }
+
+   .filter-menu {
+       /* display: flex;*/
+        flex-wrap: wrap; /* Buttons ko wrap karne ke liye */
+        justify-content: center;
+        gap: 10px;
+        margin: 1.5rem 0;
+    }
+
+    .filter-menu .filter-btn {
+        margin-left: 0; /* Extra margin hatane ke liye */
+        padding: 5px 15px;
+        background: var(--secon-bg-color);
+        border-radius: 5px;
+    }
 }
+
 
 @media(max-width:420px){
     html{
@@ -1166,10 +1182,5 @@ background: var(--hover-color);
     text-align: center;
 }
 
-.filter-menu{
-    margin: 1rem;
-    width: 250px;
-}
 
 }
-
